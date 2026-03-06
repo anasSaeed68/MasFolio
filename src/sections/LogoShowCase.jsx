@@ -7,7 +7,7 @@ const LogoIcon = ({icon}) => (
     </div>
 )
 
-export const LogoShowCase = () => {
+export default function LogoShowCase() {
   return (
       <div className="md:my-20 my-10 relative" id="skills">
     <div className="gradient-edge" />

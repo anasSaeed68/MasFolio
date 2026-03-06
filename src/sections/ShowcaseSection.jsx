@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const ShowcaseSection = () => {
+export default function ShowcaseSection(){
     const sectionRef = useRef(null);
     const rydeRef = useRef(null);
     const libraryRef = useRef(null);
@@ -14,36 +14,50 @@ export const ShowcaseSection = () => {
 
     useGSAP(()=>{
         //Animation for main section
-        gsap.fromTo(sectionRef.current,
-            {opacity:0 },
-            {
-                opacity: 1,
-                duration: 1.5
-            }
-        );
+        gsap.from(sectionRef.current,
+            {opacity:0, 
+             duration: 1,
+             scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 80%",
+                toggleActions: "play reverse play reverse",
+             }
+            },
+           );
 
         //Aniamtion for each app showcase
 
         const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
 
         cards.forEach((card, index) => {
-            gsap.fromTo(card, {
-                y:50,
+            // gsap.fromTo(card, {
+            //     y:50,
+            //     opacity: 0,
+            // },
+            //  { y: 0, 
+            //     opacity: 1, 
+            //     duration: 1, 
+            //     delay: 0.3 * (index + 1),
+            //     scrollTrigger:{
+            //         trigger: card,
+            //         start: 'top bottom-=100',
+            //     }
+            //  }
+            gsap.from(card, {
+                y: 0,
                 opacity: 0,
-            },
-             { y: 0, 
-                opacity: 1, 
-                duration: 1, 
-                delay: 0.3 * (index + 1),
-                scrollTrigger:{
+                stagger: 0.3,
+                scrollTrigger: {
                     trigger: card,
                     start: 'top bottom-=100',
+                    toggleActions: "play reverse play reverse",
                 }
              }
-        
+             );
+                }
         );
-        });
-    },[]);
+        },[]);
+  
 
   return (
     <div id='work' className='app-showcase' ref={sectionRef}>

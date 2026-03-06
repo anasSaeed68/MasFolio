@@ -1,0 +1,18 @@
+// FallbackUI.jsx
+export const FallbackUI = ({ error, resetErrorBoundary }) => {
+  return (
+    <div className="h-screen flex flex-col items-center justify-center">
+      <h1>
+        Oops 😥 <span className="animate-bounce inline-block text-2xl font-bold p-2 text-cyan-300">...</span>
+        Something went wrong!
+      </h1>
+      <p className="mt-2 text-red-400">{error.message}</p>
+      <button
+        className="mt-4 px-4 py-2 bg-black text-white shadow-2xl hover:shadow-amber-400 cursor-pointer hover:bg-red-400 hover:text-black-50 active:text-white-50"
+        onClick={resetErrorBoundary} // resets the boundary
+      >
+        Refresh / Try Again
+      </button>
+    </div>
+  );
+};

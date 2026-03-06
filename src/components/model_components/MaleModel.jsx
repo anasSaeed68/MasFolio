@@ -7,7 +7,7 @@ useGLTF.preload(import.meta.env.VITE_MALE_MODEL_API_URL);
 useGLTF.preload(import.meta.env.VITE_MALE_SHIRT_API_URL);
 useGLTF.preload(import.meta.env.VITE_MALE_PANT_API_URL);
 
-export function MaleModel({ adjustCloth, height, waist, shirtColor,   category }) {
+export default function MaleModel({ adjustCloth, height, waist, shirtColor,   category }) {
 
   const humanModel = useGLTF(import.meta.env.VITE_MALE_MODEL_API_URL) ;
   const clothingModel = useGLTF(

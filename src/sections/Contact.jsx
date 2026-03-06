@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import TitleHeader from "../components/TitleHeader";
 import { toast } from "react-toastify";
 
-export const Contact = () => {
+export default function Contact() {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [showMessage, setShowMessage] = useState(false);

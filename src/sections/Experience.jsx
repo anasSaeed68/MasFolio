@@ -8,7 +8,7 @@ import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const Experience = () => {
+export default function Experience(){
   useGSAP(() => {
     // Loop through each timeline card and animate them in
     // as the user scrolls to each card

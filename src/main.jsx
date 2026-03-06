@@ -2,11 +2,15 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { ErrorBoundary } from './components/ErrorBoundary.jsx'
+import { ErrorBoundary } from 'react-error-boundary'
+import { FallbackUI } from './components/FallbackUI.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ErrorBoundary>
+    <ErrorBoundary
+    FallbackComponent={FallbackUI}
+    onError={(error, info) => {console.error("Caught by ErrorBounday:", error, info);}}
+    >
       <App />
     </ErrorBoundary>
     

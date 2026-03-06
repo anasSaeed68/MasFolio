@@ -4,11 +4,11 @@ import { pauseImg, playImg, replayImg } from '../utils';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { remove } from 'three/examples/jsm/libs/tween.module.js';
+
 gsap.registerPlugin(ScrollTrigger);
 
 
-export const VideoCarousel = () => {
+export default function VideoCarousel() {
 
        const videoRef = useRef([]);
     const videoSpanRef = useRef([]);
@@ -90,11 +90,14 @@ useEffect(() => {
             anim.restart();
         }
         const animUpdate = () => {
+            const currentVideo = videoRef.current[videoId]; 
+            if(currentVideo && currentVideo.duration) {
             anim.progress(
                 videoRef.current[videoId].currentTime /
                 highlightsSlides[videoId].videoDuration
             );
         };
+    }
 
         if(isPlaying){
             gsap.ticker.add(animUpdate);
