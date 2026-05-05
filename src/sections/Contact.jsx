@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import TitleHeader from "../components/TitleHeader";
 import { toast } from "react-toastify";
+import {arrow_down} from "../utils"
 
 export default function Contact() {
   const formRef = useRef(null);
@@ -111,7 +112,7 @@ export default function Contact() {
                       {loading ? "Sending..." : "Send Message"}
                     </p>
                     <div className="arrow-wrapper">
-                      <img src="/images/arrow-down.svg" alt="arrow" />
+                      <img src={arrow_down} alt="arrow" />
                     </div>
                   </div>
                 </button>

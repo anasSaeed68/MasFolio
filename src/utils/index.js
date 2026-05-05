@@ -34,6 +34,7 @@ import project3Png from "../assets/images/project3.png"
 import thinkGif from "../assets/images/think.gif"
 import bgPng from "../assets/images/bg.png"
 import starPng from "../assets/images/star.png"
+import arrow_downSvg from "../assets/images/arrow-down.svg"
 
 export  const frame = framemv;
 export const first = highlightFirstmv;
@@ -70,3 +71,4 @@ export const project3 = project3Png;
 export const think = thinkGif;
 export const bg = bgPng;
 export const star = starPng;
+export const arrow_down = arrow_downSvg;
