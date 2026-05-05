@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React, { useRef } from 'react'
-
+import {project1, project2, project3} from '../utils'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +65,7 @@ export default function ShowcaseSection(){
             <div className='showcase-layout'>
                 <div className='first-project-wrapper' ref={rydeRef}>
                 <div className='image-wrapper'>
-                <img src="/images/project1.png" alt="Ryder app interface" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
+                <img src={project1} alt="Ryder app interface" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
                 </div>
             
             <div className='text-content'>
@@ -79,13 +79,13 @@ export default function ShowcaseSection(){
         <div className='project-list-wrapper overflow-hidden'>
             <div className='project' ref={libraryRef}>
                 <div className='image-wrapper bg-[#FFEFDB]'>
-                    <img src="/images/project2.png" alt="Library Management Platform" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
+                    <img src={project2} alt="Library Management Platform" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
                 </div>
                 <h2>The Library Management Platform</h2>
             </div>
              <div className='project' ref={ycDirectoryRef}>
                 <div className='image-wrapper bg-[#FFEFDB]'>
-                    <img src="/images/project3.png" alt="YC Directory App" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
+                    <img src={project3} alt="YC Directory App" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
                 </div>
                 <h2>YC Directory - A Start Showcase App</h2>
             </div>

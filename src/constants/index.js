@@ -1,9 +1,11 @@
+                
 import {
-  frame,
-  first,
-  second,
-  third,
-  fourth,
+  frame, first, second, third, fourth,
+   ideas, concepts,designs,code,
+  seo, chat, time,
+  logo2,
+  fb, insta, linkedin, x,
+  company_logo4, company_logo5, company_logo7, company_logo9
 } from '../utils';
 
 
@@ -22,23 +24,19 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Features",
-    link: "#features",
-  },
 ];
 
 
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ideas", imgPath: ideas },
+  { text: "Concepts", imgPath: concepts },
+  { text: "Designs", imgPath: designs },
+  { text: "Code", imgPath: code },
+  { text: "Ideas", imgPath: ideas },
+  { text: "Concepts", imgPath: concepts },
+  { text: "Designs", imgPath: designs },
+  { text: "Code", imgPath: code },
 ];
 
 const counterItems = [
@@ -51,41 +49,44 @@ const counterItems = [
 const logoIconsList = [
  
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: company_logo4,
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: company_logo5,
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: company_logo7,
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: company_logo9,
+  },
+ {
+    imgPath: company_logo4,
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: company_logo5,
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: company_logo7,
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: company_logo9,
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
+    imgPath: seo,
     title: "Quality Focus",
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
+    imgPath: chat,
     title: "Reliable Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/images/time.png",
+    imgPath: time,
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
@@ -98,8 +99,8 @@ const expCards = [
   {
     review:
       "The VTOE project demonstrates a seamless blend of 3D rendering and user interaction. It delivers a smooth virtual try-on experience with real-time adjustments and optimized performance.",
-    imgPath: "/images/logo2.png",
-    logoPath: "/images/logo2.png",
+    imgPath: logo2,
+    logoPath: logo2,
     title: "VTOE – Virtual Try-On Experience",
     date: "2025",
     responsibilities: [
@@ -108,26 +109,37 @@ const expCards = [
       "Integrated GLTF models with skeleton binding for accurate cloth fitting.",
       "Optimized loading performance using Suspense, asset preloading, and caching.",
     ],
+    link:"https://vtoe-ffrontend.vercel.app/",
   },
-  {
-    review:
-      "The AI Resume Analyzer project focuses on intelligent resume parsing and analysis, helping users gain actionable insights and improve their job application outcomes.",
-    imgPath: "/images/logo2.png",
-    logoPath: "/images/logo2.png",
-    title: "AI Resume Analyzer",
-    date: "2025",
-    responsibilities: [
-      "Developed an AI-powered resume analysis tool using React and Node.js.",
-      "Integrated NLP models to extract skills, experience, and education from resumes.",
-      "Implemented resume scoring and improvement suggestions based on job roles.",
-      "Handled PDF and DOCX parsing with secure file uploads and structured outputs.",
-    ],
-  },
+ {
+  review:
+    "Resumind is an AI-powered resume analysis platform designed to help users improve their resumes through intelligent feedback, resume scoring, and modern authentication workflows.",
+    
+  imgPath: logo2,
+  logoPath: logo2,
+
+  title: "Resumind",
+
+  date: "2026",
+
+  responsibilities: [
+    "Built an AI-powered resume analyzer using React Router v7 and TypeScript.",
+    
+    "Integrated Puter.js for secure authentication and AI-based resume analysis.",
+    
+    "Implemented resume scoring, feedback generation, and resume improvement suggestions.",
+    
+    "Developed a responsive and modern user interface with smooth client-side navigation.",
+    
+    "Handled resume uploads and structured AI analysis workflows for enhanced user experience.",
+  ],
+  link:"https://resumind-ai-resume-analyzer-9-pqpd8.puter.site/"
+},
   {
     review:
       "Map-to-Poster transforms geographic data into visually appealing posters. The project emphasizes creativity, precision, and customization for unique map-based designs.",
-    imgPath: "/images/logo2.png",
-    logoPath: "/images/logo2.png",
+    imgPath: logo2,
+    logoPath: logo2,
     title: "Map-to-Poster Generator",
     date: "2025",
     responsibilities: [
@@ -136,6 +148,7 @@ const expCards = [
       "Converted map views into high-resolution printable posters.",
       "Optimized rendering for export-ready formats while maintaining visual accuracy.",
     ],
+    link:""
   },
 ];
 
@@ -158,22 +171,22 @@ const expLogos = [
 const socialImgs = [
   {
     name: "insta",
-    imgPath: "/images/insta.png",
+    imgPath: insta,
     link: "https://www.instagram.com/saeed_anas/"
   },
   {
     name: "fb",
-    imgPath: "/images/fb.png",
+    imgPath: fb,
     link: "https://www.facebook.com/anas.shanassaeed/"
   },
   {
     name: "x",
-    imgPath: "/images/x.png",
-    link: ""
+    imgPath: x,
+    link: "https://x.com/Kirigaya335016"
   },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    imgPath: linkedin,
     link: "https://www.linkedin.com/in/anas-saeed-2b329424a/"
   },
 ];

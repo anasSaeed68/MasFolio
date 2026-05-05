@@ -8,7 +8,7 @@ import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Experience(){
+const Experience = () => {
   useGSAP(() => {
     // Loop through each timeline card and animate them in
     // as the user scrolls to each card
@@ -137,6 +137,13 @@ export default function Experience(){
                             )
                           )}
                         </ul>
+                        
+                           <a
+                           href={card.link}
+                           rel="noopener noreferrer"
+                           target="_blank"
+                           className=" inline-block bg-blue-400 rounded-b-xl w-full h-fit p-3 text-center text-xl font-bold transition-all duration-300 cursor-pointer hover:text-gray-600 hover:scale-105 hover:drop-shadow-[0_5px_0_rgba(251,191,36,0.8)] mt-2" >Visit Website</a>
+                      
                       </div>
                     </div>
                   </div>
@@ -150,4 +157,4 @@ export default function Experience(){
   );
 };
 
-
+export default Experience;
