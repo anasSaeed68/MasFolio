@@ -26,9 +26,9 @@ function App() {
         <ShowcaseSection />
       </LazySection>
 
-      <LazySection>
+   
         <FeatureCards />
-      </LazySection>
+
 
      
       <Experience />
