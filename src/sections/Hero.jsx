@@ -89,10 +89,10 @@ export const Hero = () => {
               </div>
               {/* absolute size-1/3 right-10  -top-5 xl:top-15 md:top-5  xl:size-1/2 md:right-0 sm:right-5 p-2 z-10 hover:rotate-3 hover:scale-105 */}
 
-              <div className="relative right-10">
+              <div className="relative w-[50%] h-full">
                 {loading && (
                   <div role="status" className="animate-pulse ">
-                    <div className="w-full max-sm:h-58 h-78 flex items-center justify-center bg-gray-300 rounded-md ">
+                    <div className="w-full max-sm:h-58 h-78 flex items-center justify-center bg-gray-300 rounded-4xl ">
                       <svg
                         class="w-11 h-11 text-fg-disabled"
                         aria-hidden="true"
