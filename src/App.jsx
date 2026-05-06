@@ -19,7 +19,8 @@ function App() {
       <ToastContainer position="top-right" autoClose={3000} />
       <Navbar />
       <Hero />
-      <VideoCarousel />
+        <VideoCarousel />
+  
 
       <LazySection>
         <ShowcaseSection />
@@ -29,7 +30,9 @@ function App() {
         <FeatureCards />
       </LazySection>
 
+     
       <Experience />
+      
 
       <LazySection>
         <LogoShowCase />

@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -13,7 +14,7 @@ export default function VideoCarousel() {
        const videoRef = useRef([]);
     const videoSpanRef = useRef([]);
     const videoDivRef = useRef([]);
-
+   const [loading, setLoading] = useState(true);
     const [video, setVideo] = useState({
         isEnd: false,
         startPlay: false,
@@ -161,7 +162,7 @@ const handleLoadedMetaData = (i, e) => setLoadedData((pre) => [...pre, e]);
 
     <>
     
-    <div className='flex items-center mt-30 mx-10 '>
+    <div className='flex items-center mt-50 mx-10 '>
        {highlightsSlides.map((list, i) => (
         <div
         key={list.id}
@@ -169,14 +170,20 @@ const handleLoadedMetaData = (i, e) => setLoadedData((pre) => [...pre, e]);
         className='pr-10 sm:pr-20 gradient-box'
         >
             <div className='video-carousel_container'>
-                <div className='w-full h-full overflow-hidden bg-black flex-center rounded-3xl'>
+                <div className='w-full h-full overflow-hidden bg-black flex-center rounded-3xl relative'>
+                   
+                   {loading && (
+                    <div className="absolute inset-0 overflow-hidden rounded-md bg-gray-300">
+                        <div className="w-full h-full skeleton-wave"/>
+                        </div>
+                   )}
 
                     <video 
                     id='video'
                     ref={(el) => (videoRef.current[i] = el)}
                     className={`${
                         list.id === 2 && "translate-x-44"
-                        } pointer-events-none`}
+                        } pointer-events-none  ${loading ? 'hidden':"block"}`}
                     
                     preload='auto'
                     playsInline={true}
@@ -189,6 +196,7 @@ const handleLoadedMetaData = (i, e) => setLoadedData((pre) => [...pre, e]);
                        handleProcess("video-end", i)
                        : handleProcess("video-last", i);
                     }}
+                    onLoadedData={()=> setLoading(false)}
                     onLoadedMetadata={(e) => handleLoadedMetaData(i,e)}
                     >
                         <source src={list.video} type='video/mp4'/>
