@@ -35,7 +35,9 @@ import thinkGif from "../assets/images/think.gif"
 import bgPng from "../assets/images/bg.png"
 import starPng from "../assets/images/star.png"
 import arrow_downSvg from "../assets/images/arrow-down.svg"
+import resumePdf from "../assets/images/RESUME_fin.pdf"
 
+export const resume = resumePdf;
 export  const frame = framemv;
 export const first = highlightFirstmv;
 export const second = highlightSecmv;
