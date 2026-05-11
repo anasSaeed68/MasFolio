@@ -28,6 +28,15 @@ import pythonSvg from "../assets/logos/python.svg"
 import nodePng from "../assets/logos/node.png"
 import reactPng from "../assets/logos/react.png"
 import threePng from "../assets/logos/three.png"
+import jsSvg from "../assets/logos/javascript-svgrepo-com.svg"
+import mongoDbSvg from "../assets/logos/mongodb-svgrepo-com.svg"
+import nextJsSvg from "../assets/logos/nextjs-svgrepo-com.svg"
+import tsSvg from "../assets/logos/typescript-svgrepo-com.svg"
+import tailwindSvg from "../assets/logos/tailwindcss-svgrepo-com.svg"
+import mySqlSvg from "../assets/logos/mysql-logo-svgrepo-com.svg"
+import cssSvg from "../assets/logos/css-3-svgrepo-com.svg"
+import javaSvg from "../assets/logos/java-4-logo-svgrepo-com.svg"
+
 import project1Png from "../assets/images/project1.png"
 import project2Png from "../assets/images/project2.png"
 import project3Png from "../assets/images/project3.png"
@@ -37,6 +46,15 @@ import starPng from "../assets/images/star.png"
 import arrow_downSvg from "../assets/images/arrow-down.svg"
 import resumePdf from "../assets/images/RESUME_fin.pdf"
 
+
+export const java = javaSvg;
+export const css = cssSvg;
+export const mySql = mySqlSvg;
+export const js = jsSvg;
+export const mongoDb = mongoDbSvg;
+export const nextJs = nextJsSvg;
+export const ts = tsSvg;
+export const tailwind = tailwindSvg;
 export const resume = resumePdf;
 export  const frame = framemv;
 export const first = highlightFirstmv;

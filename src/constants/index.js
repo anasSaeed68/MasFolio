@@ -5,11 +5,97 @@ import {
   seo, chat, time,
   logo2,
   fb, insta, linkedin, x,
-  company_logo4, company_logo5, company_logo7, company_logo9
+  company_logo4, company_logo5, company_logo7, company_logo9,
+  react,
+  nextJs,
+  node,
+  mongoDb,
+  js,
+  ts,
+  tailwind,
+  three,
+  python,
+  mySql,
+  java,
+  css
 } from '../utils';
 
 
-
+const skillsSet = [
+  {
+    name: "React.js",
+    imgPath: react,
+    details:
+      "Advanced React developer with strong expertise in component architecture, hooks, context API, reusable UI systems, and performance optimization."
+  },
+  {
+    name: "Next.js",
+    imgPath: nextJs,
+    details:
+      "Experienced in building full-stack applications using Next.js including App Router, SSR, API routes, authentication, and optimized rendering."
+  },
+  {
+    name: "Node.js",
+    imgPath: node,
+    details:
+      "Skilled in creating scalable backend services, REST APIs, authentication systems, and real-time applications using Node.js and Express."
+  },
+  {
+    name: "MongoDB",
+    imgPath: mongoDb,
+    details:
+      "Strong understanding of MongoDB database design, aggregation pipelines, schema modeling, and efficient data handling."
+  },
+  {
+    name: "JavaScript",
+    imgPath: js,
+    details:
+      "Proficient in modern JavaScript including ES6+, asynchronous programming, DOM manipulation, and advanced functional concepts."
+  },
+  {
+    name: "TypeScript",
+    imgPath: ts,
+    details:
+      "Experienced in writing scalable and maintainable applications using TypeScript with strong type safety and clean architecture."
+  },
+  {
+    name: "Tailwind CSS",
+    imgPath: tailwind,
+    details:
+      "Highly skilled in creating responsive, modern, and visually appealing user interfaces using Tailwind CSS."
+  },
+  {
+    name: "Three.js",
+    imgPath: three,
+    details:
+      "Capable of building interactive 3D experiences, animations, and immersive web interfaces using Three.js and React Three Fiber."
+  },
+  {
+  name: "Python",
+  imgPath: python,
+  details:
+    "Experienced in Python programming for backend development, automation, problem solving, data handling, and machine learning fundamentals."
+},
+{
+  name: "MySQL",
+  imgPath: mySql,
+  details:
+    "Skilled in designing relational databases, writing optimized SQL queries, managing schemas, and handling efficient data storage using MySQL."
+},
+{
+  name: "Java",
+  imgPath: java,
+  details:
+    "Strong understanding of object-oriented programming, data structures, algorithms, and application development using Java."
+},
+{
+  name: "CSS3",
+  imgPath: css,
+  details:
+    "Highly proficient in creating responsive, modern, and visually appealing layouts using CSS3, Flexbox, Grid, and animations."
+}
+  
+];
 
 const navLinks = [
   {
@@ -233,6 +319,7 @@ export {
   socialImgs,
   navLinks,
   highlightsSlides,
+  skillsSet,
 };
 
 

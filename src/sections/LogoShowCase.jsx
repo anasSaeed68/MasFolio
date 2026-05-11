@@ -9,7 +9,7 @@ const LogoIcon = ({icon}) => (
 
 export default function LogoShowCase() {
   return (
-      <div className="md:my-20 my-10 relative" id="skills">
+      <div className="md:my-20 my-10 relative">
     <div className="gradient-edge" />
     <div className="gradient-edge" />
 

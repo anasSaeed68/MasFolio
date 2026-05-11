@@ -12,6 +12,7 @@ import { ToastContainer } from "react-toastify";
 import TitleHeader from "./components/TitleHeader";
 import "react-toastify/dist/ReactToastify.css";
 import { LazySection } from "./components/LazySection";
+import TechStack from "./sections/TechStack";
 
 function App() {
   return (
@@ -20,25 +21,18 @@ function App() {
       <Navbar />
       <Hero />
         <VideoCarousel />
-  
-
       <LazySection>
         <ShowcaseSection />
       </LazySection>
-
-   
         <FeatureCards />
-
-
-     
       <Experience />
-      
-
       <LazySection>
         <LogoShowCase />
       </LazySection>
-
-
+      <LazySection>
+        <TechStack />
+      </LazySection>
+      
       <LazySection>
         <Contact />
       </LazySection>
