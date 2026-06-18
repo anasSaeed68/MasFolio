@@ -224,7 +224,7 @@ const expCards = [
     
     "Handled resume uploads and structured AI analysis workflows for enhanced user experience.",
   ],
-  link:"https://resumind-ai-resume-analyzer-9-et5if.puter.site"
+  link:"ai-resume-analyzer-black-seven.vercel.app"
 },
   {
     review:
