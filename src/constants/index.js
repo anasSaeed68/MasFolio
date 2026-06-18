@@ -224,7 +224,7 @@ const expCards = [
     
     "Handled resume uploads and structured AI analysis workflows for enhanced user experience.",
   ],
-  link:"ai-resume-analyzer-black-seven.vercel.app"
+  link:"https://ai-resume-analyzer-black-seven.vercel.app/"
 },
   {
     review:
