@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { navLinks } from '../constants'
-import { resume } from '../utils';
+
 
 
 export const Navbar = () => {
@@ -36,11 +36,17 @@ export const Navbar = () => {
             </ul>
         </nav>
 
-        <a href={resume} rel="noopener noreferrer" className='contact-btn group' target="_blank">
+        {/* <a href={resume} rel="noopener noreferrer" className='contact-btn group' target="_blank">
             <div className='inner'>
                 <span>Download Resume</span>
             </div>
-        </a>
+        </a> */}
+<p className="flex items-center gap-2">
+  <span className="inline-block size-4 rounded-full bg-green-500 animate-pulse" />
+  <span className="font-medium text-white-50">
+    Open to Full-Stack Software Engineering Opportunities
+  </span>
+</p>
       </div>
     </header>
   )

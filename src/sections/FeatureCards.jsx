@@ -16,7 +16,7 @@ gsap.utils.toArray('.timeline-card').forEach((card, i)=>{
       scrollTrigger:{
         trigger:card,
         start:"top 80%",
-        toggleActions:'play reverse play reverse'
+        toggleActions: "play reverse play reverse",
       }
     });
 
@@ -29,7 +29,7 @@ gsap.utils.toArray('.timeline-card').forEach((card, i)=>{
       opacity:1,
       ease:"power2.inOut",
       duration: 1,
-      delay: i * 0.2,
+      delay: i * 0.5,
     })
   
 
