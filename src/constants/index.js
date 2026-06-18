@@ -17,7 +17,8 @@ import {
   python,
   mySql,
   java,
-  css
+  css,
+  converso
 } from '../utils';
 
 
@@ -240,6 +241,34 @@ const expCards = [
     ],
     link:""
   },
+  {
+review:
+  "Converso is a full-stack AI-powered LMS SaaS application that transforms online learning through voice-based AI companions. The platform combines secure authentication, subscription management, personalized session tracking, and interactive AI lectures to deliver an engaging and modern educational experience.",
+  imgPath: converso,
+  logoPath: converso,
+
+  title: "Converso",
+
+  date: "2026",
+
+  responsibilities: [
+    "Built an AI-powered Learning Management System (LMS) using Next.js and TypeScript.",
+
+    "Integrated Clerk for secure authentication, user management, and subscription billing workflows.",
+
+    "Used Supabase as the backend database for managing companions, session history, bookmarks, and user-related data.",
+
+    "Integrated Vapi to create voice-enabled AI companions that deliver interactive lectures and conversational learning experiences.",
+
+    "Implemented features including companion creation, session tracking, bookmarking, and personalized learning recommendations.",
+
+    "Developed a responsive and modern user interface with seamless navigation and real-time interactions.",
+
+    "Deployed the application on Vercel with optimized server actions and scalable cloud infrastructure."
+  ],
+
+  link: "https://lms-saas-app-b137.vercel.app/"
+}
 ];
 
 

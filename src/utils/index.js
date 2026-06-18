@@ -36,6 +36,7 @@ import tailwindSvg from "../assets/logos/tailwindcss-svgrepo-com.svg"
 import mySqlSvg from "../assets/logos/mysql-logo-svgrepo-com.svg"
 import cssSvg from "../assets/logos/css-3-svgrepo-com.svg"
 import javaSvg from "../assets/logos/java-4-logo-svgrepo-com.svg"
+import conversoIco from '../assets/logos/converso.ico'
 
 import project1Png from "../assets/images/project1.png"
 import project2Png from "../assets/images/project2.png"
@@ -47,6 +48,7 @@ import arrow_downSvg from "../assets/images/arrow-down.svg"
 import resumePdf from "../assets/images/RESUME_fin.pdf"
 
 
+export const converso = conversoIco;
 export const java = javaSvg;
 export const css = cssSvg;
 export const mySql = mySqlSvg;
