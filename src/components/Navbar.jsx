@@ -43,7 +43,7 @@ export const Navbar = () => {
         </a> */}
 <p className="flex items-center gap-2">
   <span className="inline-block size-4 rounded-full bg-green-500 animate-pulse" />
-  <span className="font-medium text-white-50">
+  <span className="font-medium text-white-50 max-w-[220px] sm:max-w-none">
     Open to Full-Stack Software Engineering Opportunities
   </span>
 </p>

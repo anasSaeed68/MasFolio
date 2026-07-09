@@ -1,97 +1,114 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import React, { useRef } from 'react'
-import {project1, project2, project3} from '../utils'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useRef } from "react";
+import { project1, project2, project3 } from "../utils";
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ShowcaseSection(){
-    const sectionRef = useRef(null);
-    const rydeRef = useRef(null);
-    const libraryRef = useRef(null);
-    const ycDirectoryRef = useRef(null);
+export default function ShowcaseSection() {
+  const sectionRef = useRef(null);
+  const rydeRef = useRef(null);
+  const libraryRef = useRef(null);
+  const ycDirectoryRef = useRef(null);
 
-    useGSAP(()=>{
-        //Animation for main section
-        gsap.from(sectionRef.current,
-            {opacity:0, 
-             duration: 1,
-             scrollTrigger: {
-                trigger: sectionRef.current,
-                start: "top 80%",
-                toggleActions: "play reverse play reverse",
-             }
-            },
-           );
+  useGSAP(() => {
+    //Animation for main section
+    gsap.from(sectionRef.current, {
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    });
 
-        //Aniamtion for each app showcase
+    //Aniamtion for each app showcase
 
-        const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
 
-        cards.forEach((card, index) => {
-            // gsap.fromTo(card, {
-            //     y:50,
-            //     opacity: 0,
-            // },
-            //  { y: 0, 
-            //     opacity: 1, 
-            //     duration: 1, 
-            //     delay: 0.3 * (index + 1),
-            //     scrollTrigger:{
-            //         trigger: card,
-            //         start: 'top bottom-=100',
-            //     }
-            //  }
-            gsap.from(card, {
-                y: 0,
-                opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    trigger: card,
-                    start: 'top bottom-=100',
-                    toggleActions: "play reverse play reverse",
-                }
-             }
-             );
-                }
-        );
-        },[]);
-  
+    cards.forEach((card, index) => {
+      // gsap.fromTo(card, {
+      //     y:50,
+      //     opacity: 0,
+      // },
+      //  { y: 0,
+      //     opacity: 1,
+      //     duration: 1,
+      //     delay: 0.3 * (index + 1),
+      //     scrollTrigger:{
+      //         trigger: card,
+      //         start: 'top bottom-=100',
+      //     }
+      //  }
+      gsap.from(card, {
+        y: 0,
+        opacity: 0,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: card,
+          start: "top bottom-=100",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+    });
+  }, []);
 
   return (
-    <div id='work' className='app-showcase' ref={sectionRef}>
-        <div className='w-full'>
-            <div className='showcase-layout'>
-                <div className='first-project-wrapper' ref={rydeRef}>
-                <div className='image-wrapper'>
-                <img src={project1} alt="Ryder app interface" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
-                </div>
-            
-            <div className='text-content'>
-                <h2>
-                    On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde
-                </h2>
-                <p className='text-white-50 md:text-xl'>An app built with React Native, Expo & Tailwindcss for a fast, user-friendly experience.</p>
+    <div id="work" className="app-showcase" ref={sectionRef}>
+      <div className="w-full">
+        <TitleHeader
+          title="Professional Mobile App Projects"
+          sub="📱 Cross-Platform Mobile Applications"
+        />
+        <div className="showcase-layout mt-5">
+          <div className="first-project-wrapper" ref={rydeRef}>
+            <div className="image-wrapper">
+              <img
+                src={project1}
+                alt="Ryder app interface"
+                className="transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105"
+              />
             </div>
-        </div>
 
-        <div className='project-list-wrapper overflow-hidden'>
-            <div className='project' ref={libraryRef}>
-                <div className='image-wrapper bg-[#FFEFDB]'>
-                    <img src={project2} alt="Library Management Platform" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
-                </div>
-                <h2>The Library Management Platform</h2>
+            <div className="text-content">
+              <h2>
+                On-Demand Rides Made Simple with a Powerful, User-Friendly App
+                called Ryde
+              </h2>
+              <p className="text-white-50 md:text-xl">
+                An app built with React Native, Expo & Tailwindcss for a fast,
+                user-friendly experience.
+              </p>
             </div>
-             <div className='project' ref={ycDirectoryRef}>
-                <div className='image-wrapper bg-[#FFEFDB]'>
-                    <img src={project3} alt="YC Directory App" className='transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105'/>
-                </div>
-                <h2>YC Directory - A Start Showcase App</h2>
+          </div>
+
+          <div className="project-list-wrapper overflow-hidden">
+            <div className="project" ref={libraryRef}>
+              <div className="image-wrapper bg-[#FFEFDB]">
+                <img
+                  src={project2}
+                  alt="Library Management Platform"
+                  className="transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105"
+                />
+              </div>
+              <h2>The Library Management Platform</h2>
             </div>
+            <div className="project" ref={ycDirectoryRef}>
+              <div className="image-wrapper bg-[#FFEFDB]">
+                <img
+                  src={project3}
+                  alt="YC Directory App"
+                  className="transition-transform duration-200 ease-in-out hover:rotate-2 hover:scale-105"
+                />
+              </div>
+              <h2>YC Directory - A Start Showcase App</h2>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-    </div>
-  )
+  );
 }

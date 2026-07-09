@@ -40,7 +40,7 @@ const TechStack = () => {
           sub="🤝 What I Bring to the Table"
         />
 
-        <div className='relative w-full max-w-3xl aspect-square mx-auto flex items-center justify-center overflow-hidden'>
+        <div className='relative w-full  max-w-3xl aspect-square mx-auto flex items-center justify-center overflow-hidden'>
           {/* Outer Circle Border */}
        <div className="absolute inset-0 border-4 border-amber-800 rounded-full  circle-bg">
       <div
@@ -59,7 +59,7 @@ const TechStack = () => {
             <div
               key={i}
               onClick={() => handleClick(i, skill.details)}
-              className="absolute w-14 h-14 sm:w-20 sm:h-20   cursor-pointer flex items-center justify-center "
+              className="absolute md:w-20 md:h-20 w-10 h-10   cursor-pointer flex items-center justify-center "
               style={{
                 left: "50%",
                 top: "50%",

@@ -96,8 +96,8 @@ const Experience = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
-          sub="💼 My Career Overview"
+          title="Featured Web Projects"
+          sub="🚀 Full-Stack Web Development"
         />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
@@ -134,16 +134,18 @@ const Experience = () => {
                               <li key={index} className="text-lg">
                                 {responsibility}
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
-                        
-                           <a
-                           href={card.link}
-                           rel="noopener noreferrer"
-                           target="_blank"
-                           className=" inline-block bg-blue-400 rounded-b-xl w-full h-fit p-3 text-center text-xl font-bold transition-all duration-300 cursor-pointer hover:text-gray-600 hover:scale-105 hover:drop-shadow-[0_5px_0_rgba(251,191,36,0.8)] mt-2" >Visit Website</a>
-                      
+
+                        <a
+                          href={card.link}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          className=" inline-block bg-blue-400 rounded-b-xl w-full h-fit p-3 text-center text-xl font-bold transition-all duration-300 cursor-pointer hover:text-gray-600 hover:scale-105 hover:drop-shadow-[0_5px_0_rgba(251,191,36,0.8)] mt-2 border-amber-400 border-2"
+                        >
+                          Visit Website
+                        </a>
                       </div>
                     </div>
                   </div>

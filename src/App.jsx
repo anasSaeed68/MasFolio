@@ -20,11 +20,11 @@ function App() {
       <ToastContainer position="top-right" autoClose={3000} />
       <Navbar />
       <Hero />
-        <VideoCarousel />
+        {/* <VideoCarousel /> */}
       <LazySection>
         <ShowcaseSection />
       </LazySection>
-        <FeatureCards />
+        {/* <FeatureCards /> */}
       <Experience />
       <LazySection>
         <LogoShowCase />
@@ -36,9 +36,9 @@ function App() {
       <LazySection>
         <Contact />
       </LazySection>
-      <LazySection>
+      
         <Footer />
-      </LazySection>
+      
     </>
   );
 }

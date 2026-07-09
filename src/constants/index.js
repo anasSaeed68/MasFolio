@@ -100,11 +100,11 @@ const skillsSet = [
 
 const navLinks = [
   {
-    name: "Work",
+    name: "Mobile",
     link: "#work",
   },
   {
-    name: "Experience",
+    name: "Websites",
     link: "#experience",
   },
   {
