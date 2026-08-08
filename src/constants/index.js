@@ -136,12 +136,12 @@ const words = [
   { text: "Code", imgPath: code },
 ];
 
-const counterItems = [
-  { value: 1, suffix: "+", label: "Years of Experience" },
-  { value: 10, suffix: "+", label: "Satisfied Clients" },
-  { value: 5, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
-];
+// const counterItems = [
+//   { value: 1, suffix: "+", label: "Years of Experience" },
+//   { value: 10, suffix: "+", label: "Satisfied Clients" },
+//   { value: 5, suffix: "+", label: "Completed Projects" },
+//   { value: 90, suffix: "%", label: "Client Retention Rate" },
+// ];
 
 const logoIconsList = [
  
@@ -399,7 +399,6 @@ export {
   words,
   abilities,
   logoIconsList,
-  counterItems,
   expCards,
   socialImgs,
   navLinks,
