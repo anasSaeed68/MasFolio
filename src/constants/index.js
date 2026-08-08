@@ -1,6 +1,6 @@
                 
 import {
-  frame, first, second, third, fourth,
+
    ideas, concepts,designs,code,
   seo, chat, time,
   logo2,
@@ -18,7 +18,9 @@ import {
   mySql,
   java,
   css,
-  converso
+  converso,
+  resumind,
+
 } from '../utils';
 
 
@@ -99,6 +101,10 @@ const skillsSet = [
 ];
 
 const navLinks = [
+  {
+    name: "Education",
+    link: "#education",
+  },
   {
     name: "Mobile",
     link: "#work",
@@ -206,8 +212,8 @@ const expCards = [
   review:
     "Resumind is an AI-powered resume analysis platform designed to help users improve their resumes through intelligent feedback, resume scoring, and modern authentication workflows.",
     
-  imgPath: logo2,
-  logoPath: logo2,
+  imgPath: resumind,
+  logoPath: resumind,
 
   title: "Resumind",
 
@@ -226,21 +232,21 @@ const expCards = [
   ],
   link:"https://ai-resume-analyzer-black-seven.vercel.app/"
 },
-  {
-    review:
-      "Map-to-Poster transforms geographic data into visually appealing posters. The project emphasizes creativity, precision, and customization for unique map-based designs.",
-    imgPath: logo2,
-    logoPath: logo2,
-    title: "Map-to-Poster Generator",
-    date: "2025",
-    responsibilities: [
-      "Created a map-based poster generator using interactive map APIs.",
-      "Allowed users to customize map styles, labels, colors, and layouts.",
-      "Converted map views into high-resolution printable posters.",
-      "Optimized rendering for export-ready formats while maintaining visual accuracy.",
-    ],
-    link:""
-  },
+  // {
+  //   review:
+  //     "Map-to-Poster transforms geographic data into visually appealing posters. The project emphasizes creativity, precision, and customization for unique map-based designs.",
+  //   imgPath: logo2,
+  //   logoPath: logo2,
+  //   title: "Map-to-Poster Generator",
+  //   date: "2025",
+  //   responsibilities: [
+  //     "Created a map-based poster generator using interactive map APIs.",
+  //     "Allowed users to customize map styles, labels, colors, and layouts.",
+  //     "Converted map views into high-resolution printable posters.",
+  //     "Optimized rendering for export-ready formats while maintaining visual accuracy.",
+  //   ],
+  //   link:""
+  // },
   {
 review:
   "Converso is a full-stack AI-powered LMS SaaS application that transforms online learning through voice-based AI companions. The platform combines secure authentication, subscription management, personalized session tracking, and interactive AI lectures to deliver an engaging and modern educational experience.",
@@ -271,7 +277,57 @@ review:
 }
 ];
 
-
+const educationList = [
+  {
+    date: "2022 - 2026",
+    uniName: "University of Management & Technology, Lahore",
+    degName: "Bachelor of Software Engineering",
+    desc: "Gained a strong foundation in software development, problem-solving, system design, and modern software engineering practices through comprehensive coursework and practical projects.",
+    courses: [
+      "Object Oriented Programming",
+      "Data Structures",
+      'Database Systems',
+      "German Language",
+      "Web Development",
+      "Software ReEngineering",
+      "Mobile Application Development",
+      "Computer Networks",
+      "Machine Learning",
+      "Software Quality Assurance",
+    ]
+  },
+  {
+  date: "2019 - 2021",
+  uniName: "Govt College of Science, Lahore",
+  degName: "F.Sc. Pre-Engineering",
+  desc: "Built a strong foundation in mathematics, physics, and chemistry, developing analytical thinking, problem-solving skills, and a solid academic background for pursuing engineering.",
+  courses: [
+    "Mathematics",
+    "Physics",
+    "Chemistry",
+    "English",
+    "Pakistan Studies",
+    "Islamiyat",
+    "Urdu"
+  ]
+},
+{
+  date: "2017 - 2019",
+  uniName: "Al-Siraat High School, Lahore",
+  degName: "Matriculation — Science Group",
+  desc: "Developed a strong foundation in mathematics and the sciences while building analytical thinking, problem-solving, and critical reasoning skills.",
+  courses: [
+    "Mathematics",
+    "Physics",
+    "Chemistry",
+    "Computer Science",
+    "English",
+    "Pakistan Studies",
+    "Islamiyat",
+    "Urdu"
+  ]
+}
+]
 
 
 const socialImgs = [
@@ -297,47 +353,47 @@ const socialImgs = [
   },
 ];
 
-const highlightsSlides = [
-  {
-    id: 1,
-    textLists: [
-      "Enter A17 Pro.",
-      "Game-changing chip.",
-      "Groundbreaking performance.",
-    ],
-    video: frame,
-    videoDuration: 5,
-  },
-  {
-    id: 2,
-    textLists: [
-      "Titanium.",
-      "So strong. So light. So Pro.",
-    ],
-    video:second,
-    videoDuration: 2,
-  },
-  {
-    id: 3,
-    textLists: [
-      "Iphone 15 Pro Max has the",
-      "longest optical zoom in",
-      "iphone ever. Far out.",
-    ],
-    video: third,
-    videoDuration: 5,
-  },
-  {
-    id: 4,
-    textLists: [
-      "All-new Action button.",
-      "What will yours do?."
-    ],
-    video: fourth,
-    videoDuration: 3.63,
-  }
+// const highlightsSlides = [
+//   {
+//     id: 1,
+//     textLists: [
+//       "Enter A17 Pro.",
+//       "Game-changing chip.",
+//       "Groundbreaking performance.",
+//     ],
+//     video: frame,
+//     videoDuration: 5,
+//   },
+//   {
+//     id: 2,
+//     textLists: [
+//       "Titanium.",
+//       "So strong. So light. So Pro.",
+//     ],
+//     video:second,
+//     videoDuration: 2,
+//   },
+//   {
+//     id: 3,
+//     textLists: [
+//       "Iphone 15 Pro Max has the",
+//       "longest optical zoom in",
+//       "iphone ever. Far out.",
+//     ],
+//     video: third,
+//     videoDuration: 5,
+//   },
+//   {
+//     id: 4,
+//     textLists: [
+//       "All-new Action button.",
+//       "What will yours do?."
+//     ],
+//     video: fourth,
+//     videoDuration: 3.63,
+//   }
 
-];
+// ];
 
 export {
   words,
@@ -347,8 +403,8 @@ export {
   expCards,
   socialImgs,
   navLinks,
-  highlightsSlides,
   skillsSet,
+  educationList
 };
 
 

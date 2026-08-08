@@ -29,7 +29,7 @@ export default function ShowcaseSection() {
 
     const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
 
-    cards.forEach((card, index) => {
+    cards.forEach((card) => {
       // gsap.fromTo(card, {
       //     y:50,
       //     opacity: 0,

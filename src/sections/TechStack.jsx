@@ -8,7 +8,7 @@ const TechStack = () => {
   const [text, setText] = useState("");
   const [size , setSize] = useState(600);
 
-  useEffect((effect)=>{
+  useEffect(()=>{
     const updateSize = () => {
       setSize(window.innerWidth < 640 ? 400 : 600);
     };

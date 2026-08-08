@@ -207,7 +207,7 @@ section {
 
   /* Showcase Section */
   .app-showcase {
-    @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
+    @apply w-full px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
 
     .showcase-layout {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
@@ -449,6 +449,28 @@ section {
     width: 100%;
   }
 }
+
+.edu-block{
+  background: linear-gradient(
+    180deg,
+    rgb(25, 4, 39) 20%,
+    #020f3a 58%,
+    #20226b 100%
+  );
+}
+
+.progressBar-bg{
+
+ background: linear-gradient(
+    180deg,
+    rgb(138, 43, 202) 20%,
+    rgb(8, 161, 199) 58%,
+    #20226b 100%
+  );
+
+}
+
+
 
 
 .gradient-line {

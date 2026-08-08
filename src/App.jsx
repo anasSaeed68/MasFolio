@@ -1,8 +1,8 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./sections/Hero";
-import VideoCarousel from "./components/VideoCarousel";
+
 import ShowcaseSection from "./sections/ShowcaseSection";
-import FeatureCards from "./sections/FeatureCards";
+
 
 import LogoShowCase from "./sections/LogoShowCase";
 import Experience from "./sections/Experience";
@@ -13,18 +13,26 @@ import TitleHeader from "./components/TitleHeader";
 import "react-toastify/dist/ReactToastify.css";
 import { LazySection } from "./components/LazySection";
 import TechStack from "./sections/TechStack";
+import Education from "./sections/Education";
+
 
 function App() {
+
   return (
     <>
       <ToastContainer position="top-right" autoClose={3000} />
+   
       <Navbar />
       <Hero />
-        {/* <VideoCarousel /> */}
+
+   
+ <Education />
+    
+   
       <LazySection>
         <ShowcaseSection />
       </LazySection>
-        {/* <FeatureCards /> */}
+      
       <Experience />
       <LazySection>
         <LogoShowCase />
