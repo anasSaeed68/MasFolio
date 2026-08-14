@@ -344,7 +344,7 @@ const socialImgs = [
   {
     name: "x",
     imgPath: x,
-    link: "https://x.com/Kirigaya335016"
+    link: "https://x.com/anasSaeedk0"
   },
   {
     name: "linkedin",
