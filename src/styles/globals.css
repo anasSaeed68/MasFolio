@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #03f383 #111;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #03f383;
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #068877;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+  /* Better text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Prevent automatic text scaling on iOS */
+  -webkit-text-size-adjust: 100%;
+
+}
+
+@layer components{
+  .modes{
+    @apply flex items-center gap-1 cursor-pointer z-60;
+  }
+}
+
+.modes-img-bg{
+    background-color: white;
+}
+.modes-img-bg:hover{
+   background: linear-gradient(
+    90deg,
+    rgb(18, 43, 10) 33.3%,
+    rgb(12, 32, 46)  70%,
+    rgb(45, 46, 10) 33.3%
+    );
+}
+
+.modes-p-bg{
+  background: linear-gradient(
+    90deg,
+    rgb(156, 141, 132) 10%,
+    rgb(14, 24, 36)  78%,
+    #31022d 90%
+    );
+    
+}
+.modes-p-bg:hover{
+   background: linear-gradient(
+    180deg,
+    rgba(2, 43, 82) 20%,
+    rgb(32, 53, 51)  58%,
+    #a80327 100%
+    );
+}
+
+.modes-p1-bg{
+   background: linear-gradient(
+    180deg,
+    rgba(2, 43, 82) 33.3%,
+    rgb(1, 92, 84)  33.3%,
+    #140264 33.3%
+    );
+}
+.modes-p1-bg:hover{
+  background: linear-gradient(
+    90deg,
+    rgba(2, 43, 82) 33.3%,
+    rgb(1, 92, 84)  33.3%,
+    #880315 33.3%
+    );
+}
+
+
+
+

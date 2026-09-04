@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+
+import './styles/globals.css';
 import App from './App.jsx'
 import { ErrorBoundary } from 'react-error-boundary'
-import { FallbackUI } from './components/FallbackUI.jsx'
+import { FallbackUI } from './features/home/components/FallbackUI';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

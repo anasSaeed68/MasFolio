@@ -1,53 +1,17 @@
-import { Navbar } from "./components/Navbar";
-import { Hero } from "./sections/Hero";
-
-import ShowcaseSection from "./sections/ShowcaseSection";
-
-
-import LogoShowCase from "./sections/LogoShowCase";
-import Experience from "./sections/Experience";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
-import { ToastContainer } from "react-toastify";
-import TitleHeader from "./components/TitleHeader";
-import "react-toastify/dist/ReactToastify.css";
-import { LazySection } from "./components/LazySection";
-import TechStack from "./sections/TechStack";
-import Education from "./sections/Education";
-
-
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import Home from "./features/home/Home";
+import MacOs from "./features/macos/MacOs";
+import { Modes } from "./components";
 function App() {
 
   return (
-    <>
-      <ToastContainer position="top-right" autoClose={3000} />
-   
-      <Navbar />
-      <Hero />
-
-   
- <Education />
-    
-   
-      <LazySection>
-        <ShowcaseSection />
-      </LazySection>
-      
-      <Experience />
-      <LazySection>
-        <LogoShowCase />
-      </LazySection>
-      <LazySection>
-        <TechStack />
-      </LazySection>
-      
-      <LazySection>
-        <Contact />
-      </LazySection>
-      
-        <Footer />
-      
-    </>
+    <BrowserRouter>
+    <Modes/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mac-os" element={<MacOs />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
