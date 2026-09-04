@@ -10,17 +10,14 @@ const WindowWrapper = (Component , windowKey) => {
   const Wrapped = (props) => {
     const {focusWindow, windows} = useWindowStore();
     const window = windows[windowKey];
-
-    if(!window){
-       console.error(`Window "${windowKey}" was not found in the window store.`); return null; 
-    }
-    const {isOpen, zIndex} = window;
+    const isOpen = window?.isOpen ?? false;
+    const zIndex = window?.zIndex ?? 0;
     const ref = useRef(null);
 
  useGSAP(() =>{
    const el = ref.current;
    if(!el || !isOpen) return;
-   el.style.diaplay = 'block';
+   el.style.display = 'block';
 
    gsap.fromTo(el,{
     scale: 0.8, opacity: 0, y:40

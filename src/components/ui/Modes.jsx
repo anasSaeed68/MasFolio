@@ -1,5 +1,4 @@
 import { modesList } from '@/constants/data';
-import clsx from 'clsx';
 import React, { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 
