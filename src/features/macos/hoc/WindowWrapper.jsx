@@ -30,6 +30,7 @@ const el = ref.current;
 if(!el) return;
 
 const [instance] = Draggable.create(el , {
+  trigger:"#window-header",
   onPress: () => focusWindow(windowKey)
 });
 
@@ -46,7 +47,7 @@ return ()=> instance.kill();
 
 
     return (
-    <section id={windowKey} ref={ref} style={{zIndex}} className={`absolute ${windowKey !=='finder' ? 'max-w-fit':'max-w-[70%]'}`}>
+    <section id={windowKey} ref={ref} style={{zIndex}} className={`absolute`}>
     <Component {...props}/>
     </section>
     );

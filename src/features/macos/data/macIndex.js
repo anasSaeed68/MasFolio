@@ -1,4 +1,5 @@
-import { expCards } from "@/features/home/data/homeData";
+import { educationList, expCards } from "@/features/home/data/homeData";
+
 
 
 
@@ -102,6 +103,8 @@ const blogPosts = [
     link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
   },
 ];
+
+
 
 const techStack = [
   {
@@ -226,6 +229,44 @@ const techStack = [
   },
 ];
 
+const educationStack = [
+  {
+    category: "Bachelor",
+    items: educationList[0].courses,
+  },
+  {
+    category: "Inter",
+    items: educationList[1].courses,
+  },{
+    category: "Matric",
+    items: educationList[2].courses,
+  }
+];
+
+const helpStack = [
+  {
+    category: "Technical Skills",
+    items: [
+      "show tech stack              — Show all technical skills",
+      "show tech <category>        — Show skills for a specific category",
+      "                              Example: show tech frontend",
+    ],
+  },
+  {
+    category: "Education",
+    items: [
+      "show edu stack               — Show all education details",
+    ],
+  },
+  {
+    category: "General",
+    items: [
+      "--help                       — Show available commands",
+      "clear                        — Clear the terminal",
+    ],
+  },
+];
+
 
 const socials = [
   {
@@ -314,6 +355,8 @@ export {
   socials,
   photosLinks,
   gallery,
+  educationStack,
+  helpStack
 };
 
 const project1 = expCards[ 0 ];
