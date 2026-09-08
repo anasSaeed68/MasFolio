@@ -118,27 +118,12 @@ export const Hero = () => {
 
             {showText && (
               <TypeWriter
-                text={`
-               Hi, I'm Anas Saeed, a passionate Full-Stack Developer dedicated to
-              crafting seamless web/mobile applications experiences. With expertise in both
-              front-end and back-end technologies, I specialize in building
-              robust applications that not only look great but also perform
-              flawlessly. Let's collaborate to bring your ideas to life and
-              create impactful digital solutions together.
-              `}
+               text="Hi, I'm Anas Saeed, a passionate Full-Stack Developer dedicated to crafting seamless web/mobile application experiences. With expertise in both front-end and back-end technologies, I specialize in building robust applications that not only look great but also perform flawlessly. Let's collaborate to bring your ideas to life and create impactful digital solutions together."
                 tag="p"
                 className="text-white-50 md:text-xl relative z-10 pointer-events-none"
               />
             )}
 
-            {/* <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Anas Saeed, a passionate Full-Stack Developer dedicated to
-              crafting seamless web/mobile applications experiences. With expertise in both
-              front-end and back-end technologies, I specialize in building
-              robust applications that not only look great but also perform
-              flawlessly. Let's collaborate to bring your ideas to life and
-              create impactful digital solutions together.
-            </p> */}
 
             {/* Button */}
             <Button

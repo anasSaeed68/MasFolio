@@ -1,32 +1,64 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
-export const TypeWriter = ({text, tag, className}) => {
-    const [displayed, setDisplayed] = useState("");
-    
-    useEffect(() => {
-        let index = 0;
-        let start;
-        const step = (timestamp) => {
-            if(!start) start = timestamp;
-            const progress = timestamp - start;
-            if(progress > 10){
-                setDisplayed((prev) => prev + text[index]);
-                index++;
-                start = timestamp;
-            }
+export const TypeWriter = ({
+  text,
+  tag = "p",
+  className = "",
+}) => {
+  const textRef = useRef(null);
 
-            if(index < text.length-1) requestAnimationFrame(step);
-        };
+  useEffect(() => {
+    const element = textRef.current;
 
-      const raf = requestAnimationFrame(step);
+    if (!element) return;
 
-      return () => cancelAnimationFrame(raf);
+    const state = {
+      progress: 0,
+    };
 
+    const ctx = gsap.context(() => {
+      gsap.to(state, {
+        progress: text.length,
 
-    },[text]);
-    const Tag = tag;
+        duration: text.length * 0.025,
+
+        ease: "none",
+
+        onUpdate: () => {
+          const count = Math.floor(state.progress);
+
+          element.textContent = text.slice(0, count);
+        },
+      });
+    }, element);
+
+    return () => {
+      ctx.revert();
+    };
+  }, [text]);
+
+  const Tag = tag;
 
   return (
-    <Tag className={`${className} transition-all duration-300 `}>{displayed} <span className=' font-extrabold text-xl animate-bounce transition duration-200 rotate-5 inline-block border-b-6 border-b-white rounded-2xl bg-green-400  text-transparent'>|</span></Tag>
-  )
-}
+    <Tag className={`${className} relative`}>
+      <span ref={textRef} />
+
+      <span
+        className="
+          inline-block
+          font-extrabold
+          text-xl
+          animate-bounce
+          border-b-6
+          border-b-white
+          rounded-2xl
+          bg-green-400
+          text-transparent
+        "
+      >
+        |
+      </span>
+    </Tag>
+  );
+};

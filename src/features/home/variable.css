@@ -269,15 +269,14 @@ section {
   /* Contact */
    .grid-12-cols {
     @apply grid grid-cols-1 ;
-  }
-  form {
+    form {
     label {
       @apply block text-white-50 mb-2;
     }
 
     input,
     textarea {
-      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-blue-100 rounded-md;
+      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-transparent rounded-md outline-none;
     }
 
     a {
@@ -288,6 +287,8 @@ section {
       }
     }
   }
+  }
+  
 
   /* Footer */
 

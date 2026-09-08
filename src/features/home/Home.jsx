@@ -9,9 +9,9 @@ import ShowcaseSection from "./sections/ShowcaseSection";
 import Experience from "./sections/Experience";
 import LogoShowCase from "./sections/LogoShowCase";
 import TechStack from "./sections/TechStack";
-import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import "./variable.css";
+import ContactHome from "./sections/ContactHome";
 
 const Home = () => {
   useEffect(() => {
@@ -54,7 +54,7 @@ const Home = () => {
       </LazySection>
 
       <LazySection>
-        <Contact />
+        <ContactHome />
       </LazySection>
 
       <Footer />

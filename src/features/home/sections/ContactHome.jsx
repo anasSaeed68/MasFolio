@@ -7,7 +7,7 @@ import TitleHeader from "../components/TitleHeader";
 import { arrow_down } from "@/utils";
 
 
-export default function Contact() {
+export default function ContactHome() {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
@@ -54,7 +54,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="flex-center section-padding">
+    <>
       <div className="w-full h-full md:px-10 px-5 ">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
@@ -137,6 +137,6 @@ export default function Contact() {
           </div>
         )}
       </div>
-    </section>
+    </>
   );
 };
