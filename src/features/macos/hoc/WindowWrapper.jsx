@@ -27,12 +27,14 @@ const WindowWrapper = (Component , windowKey) => {
 
 useGSAP(()=> {
 const el = ref.current;
-if(!el) return;
+if (!el) return;
 
-const [instance] = Draggable.create(el , {
-  trigger:"#window-header",
-  onPress: () => focusWindow(windowKey)
-});
+  const header = el.querySelector(".window-header");
+
+  const [instance] = Draggable.create(el, {
+    trigger: header,
+    onPress: () => focusWindow(windowKey),
+  });
 
 return ()=> instance.kill();
 

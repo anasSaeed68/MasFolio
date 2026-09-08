@@ -48,7 +48,7 @@ const openItem = (item) => {
 
 return (
     <>
-    <div id='window-header'>
+    <div className='window-header'>
       <WindowControls target='finder'/>
     <Search className='icon'/>
     </div>

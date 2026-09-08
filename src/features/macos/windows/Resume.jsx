@@ -12,7 +12,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.vers
 const Resume = () => {
   return (
     <> 
-    <div id='window-header'>
+    <div className='window-header'>
        <WindowControls target='resume'/>
        <h2>Resume.pdf</h2>
        <a href="files/resume.pdf" download className='cursor-pointer' title='Download resume'>

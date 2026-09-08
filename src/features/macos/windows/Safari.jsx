@@ -8,7 +8,7 @@ import WindowWrapper from '../hoc/WindowWrapper';
 const Safari = () => {
   return (
     <>
-    <div id='window-header'>
+    <div className='window-header'>
     <WindowControls target='safari' />
 
     <PanelLeft className='ml-10 icon'/>
